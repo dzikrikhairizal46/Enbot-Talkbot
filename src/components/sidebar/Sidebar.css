@@ -1,0 +1,101 @@
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar .MuiListItemIcon-root {
+    min-width: 36px;
+  }
+  
+  .sidebar .MuiListItemText-root {
+    margin-left: 10px;
+  }
+  
+  .sidebar .nested {
+    padding-left: 30px;
+  }
+  
+  .sidebar .MuiListItemText-primary {
+    font-weight: bold;
+  }
+  
+  .sidebar .MuiCollapse-container {
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+  .sidebar .MuiCollapse-container .MuiListItem-root {
+    padding: 8px 16px;
+  }
+  
+  .sidebar .MuiCollapse-container .MuiListItemIcon-root {
+    min-width: 32px;
+  }
+  
+  .sidebar .MuiCollapse-container .MuiListItemText-root {
+    margin-left: 8px;
+  }
+  
+  .sidebar .MuiCollapse-entered {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .toggle-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f1f1f1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .toggle-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Media query untuk membuat sidebar responsif */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 10px;
+    }
+  
+    .sidebar .MuiListItemIcon-root {
+      min-width: 24px;
+    }
+  
+    .sidebar .MuiListItemText-root {
+      margin-left: 5px;
+    }
+  
+    .sidebar .nested {
+      padding-left: 20px;
+    }
+  
+    .sidebar .MuiCollapse-container .MuiListItem-root {
+      padding: 8px 12px;
+    }
+  
+    .sidebar .MuiCollapse-container .MuiListItemIcon-root {
+      min-width: 24px;
+    }
+  
+    .sidebar .MuiCollapse-container .MuiListItemText-root {
+      margin-left: 5px;
+    }
+  }
+  
